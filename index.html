@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>PULSE · Professional Utilities</title>
+  <title>Decode · Professional Utilities</title>
   
   <!-- PWA Manifest & Icons -->
   <link rel="manifest" href="manifest.json">
@@ -225,7 +225,7 @@
         if (!qrCodeObj.current) return;
         const originalWidth = qrCodeObj.current._options.width;
         qrCodeObj.current.update({ width: quality, height: quality });
-        await qrCodeObj.current.download({ name: "pulse-qr", extension: "png" });
+        await qrCodeObj.current.download({ name: "decode-qr", extension: "png" });
         qrCodeObj.current.update({ width: originalWidth, height: originalWidth });
       };
 
@@ -657,7 +657,7 @@
             </div>
             
             <div className="p-6 bg-slate-50">
-               <h3 className="font-bold text-slate-900 mb-4 text-sm">Application</h3>
+               <h3 className="font-bold text-slate-900 mb-4 text-sm">About Decode</h3>
                <div className="space-y-3">
                  <div className="flex justify-between items-center text-xs p-3 bg-white rounded-lg shadow-sm border border-slate-100">
                    <span className="text-slate-500 font-medium">Build Version</span>
