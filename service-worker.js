@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pulse-pro-v1';
+const CACHE_NAME = 'decode-pro-v1';
 const urlsToCache = [
   './',
   './index.html',
